@@ -1,0 +1,22 @@
+[
+    {
+        "category": "Transport",
+        "amount": 1500,
+        "date": "2024-12-06"
+    },
+    {
+        "category": "Food",
+        "amount": 1200,
+        "date": "2024-12-07"
+    },
+    {
+        "category": "Shopping",
+        "amount": 1200,
+        "date": "2024-12-07"
+    },
+    {
+        "category": "Rent",
+        "amount": 6200,
+        "date": "2024-12-07"
+    }
+]
