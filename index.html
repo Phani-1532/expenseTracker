@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Expense Tracker Web App</h1>
+    <div class="input-section">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value=""></option>
+            <option value="College Fee">College Fee</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input" placeholder="Enter amount">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+        <button type="button" id="add-btn" class="btn">ADD</button>
+    </div>
+    <div class="input-section">
+        <label for="filter-category">Filter by Category:</label>
+        <select id="filter-category">
+            <option value="">All</option>
+            <option value="College Fee">College Fee</option>
+            <option value="Rent">Rent</option>
+            <option value="Transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Shopping">Shopping</option>
+        </select>
+    </div>
+    <div class="expenses-list">
+        <h2>Expenses List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="expense-table-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td id="total">Total:</td>
+                    <td id="total-amount"></td>
+                    <td colspan="2"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div>
+        <h2 class="h2">Expense Distribution</h2>
+        <canvas id="expense-chart" width="400" height="400"></canvas>
+    </div>
+    <div class="input-section" style="margin-bottom: 0">
+        <button id="export-btn" class="btn">Export Data</button>
+        <label for="import-file" class="btn" id="import-btn">Import Data</label>
+        <input type="file" id="import-file" accept=".json" style="display: none;">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
