@@ -278,40 +278,30 @@ tfoot td {
     th, td {
         padding: 5px; /* Adjust padding */
     }
-
     .expenses-list {
         overflow-x: auto; /* Allow horizontal scrolling */
     }
-
     .btn{
         width:50%
-    }
-
-    
+    } 
     #total-amount{
         font-size: 14px;
     }
-
     #total{
         font-size: 14px;
     }
-
-
 }
 
 @media (max-width: 375px) {
     table {
         font-size: 12px; /* Further reduce font size for small screens */
     }
-
     th, td {
         padding: 4px;
     }
-
     .btn{
         width: 100%;
     }
-
     .delete-btn{
         width: 100%;
         height: 100%;
@@ -321,12 +311,9 @@ tfoot td {
         justify-content: center;
         align-items: center;
     }
-
-    
     #total-amount{
         font-size: 14px;
     }
-
     #total{
         font-size: 14px;
     }
@@ -347,14 +334,12 @@ tfoot td {
         padding: 13px;
 
     }
-
     .delete-btn{
         width: 40%;
         height: 10px;
         padding: 13px;
         
     }
-
     #total-amount{
         font-size: 14px;
     }
